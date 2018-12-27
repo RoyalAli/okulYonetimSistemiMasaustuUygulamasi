@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #DF4C06;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.logIn">
+   <children>
+      <VBox layoutX="138.0" layoutY="97.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="160.0" prefWidth="200.0">
+               <children>
+                  <Label text="Kullanıcı adı:" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="130.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="130.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="kullaniciAdiTextField" prefWidth="250.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 20;">
+                     <HBox.margin>
+                        <Insets top="130.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Şifre:" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="175.0" top="20.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <PasswordField fx:id="sifrePasswordField" prefWidth="250.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 20;">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefHeight="220.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="girisButton" mnemonicParsing="false" onAction="#setGirisButton" prefWidth="55.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 20;" text="Giriş" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="400.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
